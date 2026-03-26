@@ -1,16 +1,114 @@
-# React + Vite
+# 🎨 React Background Color Changer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that dynamically changes the background color of the screen using interactive buttons.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* 🔁 Dynamic background color updates
+* ⚡ Instant UI re-render using React state
+* 🎯 Clean and minimal UI with Tailwind CSS
+* 🧠 Beginner-friendly project to understand React event handling
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React
+* Vite
+* Tailwind CSS
+
+---
+
+## 📸 Preview
+
+The app displays a full-screen background with buttons at the bottom. Clicking a button changes the background color instantly.
+
+---
+
+## 📂 Project Structure
+
+```
+├── src
+│   ├── assets
+│   │   ├── react.svg
+│   │   ├── vite.svg
+│   │   └── hero.png
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/react-color-changer.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd react-color-changer
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🧩 How It Works
+
+* The app uses React's `useState` hook to store the current background color.
+* Clicking a button triggers an event handler.
+* The handler updates the state using `setColor()`.
+* React re-renders the UI with the new background color.
+
+---
+
+## 💡 Key Concept
+
+Event handlers in React require a **function reference**, not a function call.
+
+```jsx
+onClick={() => changeColor("red")}
+```
+
+This ensures the function runs **only when the button is clicked**, not during render.
+
+---
+
+## 🎯 Future Improvements
+
+* 🎨 Add more color options
+* 🌈 Color picker input
+* 💾 Save selected color in local storage
+* ✨ Smooth transition animations
+
+---
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+## 🙌 Acknowledgements
+
+Built as a beginner-friendly project to understand React state and event handling.
